@@ -1,0 +1,226 @@
+/*! locomotive-scroll v3.5.4 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+
+@import "../../../node_modules/locomotive-scroll/dist/locomotive-scroll.min.css";
+/*! locomotive-scroll v3.5.4 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+html.has-scroll-smooth {
+	overflow: hidden;
+}
+
+html.has-scroll-dragging {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.has-scroll-smooth body {
+	overflow: hidden;
+}
+
+.has-scroll-smooth [data-scroll-container] {
+	min-height: 100vh;
+}
+
+.c-scrollbar {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 11px;
+	height: 100vh;
+	transform-origin: center right;
+	transition: transform 0.3s, opacity 0.3s;
+	opacity: 0;
+}
+.c-scrollbar:hover {
+	transform: scaleX(1.45);
+}
+.c-scrollbar:hover,
+.has-scroll-scrolling .c-scrollbar,
+.has-scroll-dragging .c-scrollbar {
+	opacity: 1;
+}
+
+.c-scrollbar_thumb {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: black;
+	opacity: 0.5;
+	width: 7px;
+	border-radius: 10px;
+	margin: 2px;
+	cursor: -webkit-grab;
+	cursor: grab;
+}
+.has-scroll-dragging .c-scrollbar_thumb {
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
+}
+
+html {
+	line-height: 1.15;
+	/* 1 */
+	-webkit-text-size-adjust: 100%;
+	/* 2 */
+}
+
+body {
+	font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+	height: 1000px;
+	background-color: #000000;
+	margin: 0;
+}
+
+/* .c-loader {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	background-color: black;
+	visibility: hidden;
+	opacity: 0;
+  } */
+
+.c-loader {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	min-height: 100vh;
+	pointer-events: none;
+	background-color: black;
+	flex-direction: column;
+	z-index: 200;
+	top: 0;
+	left: 0;
+	width: 100%;
+	visibility: hidden;
+	overflow: hidden;
+	opacity: 0;
+}
+.c-loader__mask {
+	z-index: 200;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background: rgb(5, 5, 5);
+	overflow: hidden;
+}
+
+.c-loader__inner {
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(10, 10, 10);
+	position: relative;
+}
+
+.row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+header {
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	z-index: 10;
+}
+
+.header-inner {
+	position: relative;
+	height: 100px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.navigation {
+	position: absolute;
+	left: 0;
+	right: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.navigation nav ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 0;
+}
+
+.navigation nav ul li {
+	list-style: none;
+	margin: 0 40px;
+}
+
+@media (max-width: 1440px) {
+	.navigation nav ul li {
+		margin: 0 24px;
+	}
+}
+
+.navigation a {
+	font-size: 0.875rem;
+	padding: 8px 0;
+	text-decoration: none;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+.c-gallery__item {
+	margin-top: 10vw;
+	margin-right: auto;
+	margin-left: auto;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 75%;
+	flex: 0 0 75%;
+	max-width: 75%;
+}
+
+.c-gallery__mask {
+	padding-top: 67%;
+	overflow: hidden;
+	position: relative;
+	/*   -webkit-perspective: 1000px;
+	perspective: 1000px; */
+}
+
+.c-gallery__src {
+	top: 0;
+	left: 0;
+	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	position: absolute;
+	-o-object-position: 50% 50%;
+	object-position: 50% 50%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	will-change: transform;
+}
+
+/*# sourceMappingURL=style.css.map */

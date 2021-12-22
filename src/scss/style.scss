@@ -1,0 +1,23 @@
+// IMPORT THE Font Awesome
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+//IMPORT CUSTOM FONT
+@use "../webfonts/lato";
+
+//IMPORT CUSTOM BOOTSTRAP
+@use "custom";
+
+//IMPORT BASE
+@use "base/reset";
+@use "base/animations";
+@use "base/typography";
+
+//IMPORT LAYOUT
+@use "layout/navigation";
+
+// IMPORT THE COMPONENTS
+@use "components/burgermenu";
+@use "components/buttons";

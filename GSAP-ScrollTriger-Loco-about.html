@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>About</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:300,600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="build/GSAP_loco_scrolltriger_barba.css" />
+	</head>
+
+	<body data-barba="wrapper">
+		<div class="c-loader js-loader">
+			<div class="c-loader__mask js-loader__mask">
+				<div class="c-loader__inner js-loader__inner"></div>
+				<!-- this will scale up -->
+			</div>
+		</div>
+
+		<div data-barba="container" data-barba-namespace="about">
+			<header id="header">
+				<div class="row">
+					<div class="header-inner">
+						<div class="navigation">
+							<nav>
+								<ul>
+									<li>
+										<a
+											href="/GSAP-ScrollTriger-Loco-index.html"
+											>Home</a
+										>
+									</li>
+									<li>
+										<a
+											href="/GSAP-ScrollTriger-Loco-about.html"
+											>About</a
+										>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="scroll-container" data-scroll-container>
+				<main id="main" class="site-main">
+					<section id="about-content">
+						<div class="row c-gallery">
+							<div class="c-gallery__item is-parallax">
+								<div class="c-gallery__mask">
+									<img
+										src="https://images.unsplash.com/photo-1470218091926-22a08a325802?dpr=1.25&auto=compress,format&fit=crop&w=1199&h=673&q=80&cs=tinysrgb&crop="
+										alt=""
+										class="c-gallery__src"
+									/>
+								</div>
+							</div>
+							<div class="c-gallery__item is-parallax">
+								<div class="c-gallery__mask">
+									<img
+										src="https://images.unsplash.com/uploads/1413142095961484763cf/d141726c?dpr=1.25&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop="
+										alt=""
+										class="c-gallery__src"
+									/>
+								</div>
+							</div>
+							<div class="c-gallery__item is-parallax">
+								<div class="c-gallery__mask">
+									<img
+										src="https://images.unsplash.com/photo-1468793195345-d9d67818016d?dpr=1.25&auto=compress,format&fit=crop&w=1199&h=794&q=80&cs=tinysrgb&crop="
+										alt=""
+										class="c-gallery__src"
+									/>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+			</div>
+		</div>
+	</body>
+
+	<script
+		type="module"
+		defer
+		src="/build/GSAP_loco_scrolltriger_barba.js"
+	></script>
+</html>
