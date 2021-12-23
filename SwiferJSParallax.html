@@ -3,111 +3,141 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Swifer Js Gsap3</title>
-		<link rel="stylesheet" href="build/swifergsap3.css" />
+		<title>Swifer Js Parallax</title>
+		<link rel="stylesheet" href="build/swiferparallax.css" />
 	</head>
 
 	<body>
-		<section class="banner">
-			<div id="banner-slider" class="banner-slider swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="banner-slider__image-container">
-							<img
-								src="src/images/prewedding/AlamMatch-Prewedding-Full-HD-0074-edit.jpg"
-								class="banner-slider__image"
-								alt="preweding 1"
-							/>
-							<div
-								class="banner-slider__info-container"
-								data-swiper-parallax="-300"
-							>
-								<h2
-									class="banner-slider__title"
-									data-swiper-parallax="-300"
-								>
-									Test Swifer
-								</h2>
-								<p class="banner-slider__description">
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Accusantium natus.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="banner-slider__image-container">
-							<img
-								src="src/images/prewedding/AlamMatch-Prewedding-Full-HD-0142-edit.jpg"
-								class="banner-slider__image"
-								alt="preweding 2"
-							/>
-						</div>
-						<div
-							class="banner-slider__info-container"
-							data-swiper-parallax="-300"
+		<div class="swiper-container main-slider loading">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<figure
+						class="slide-bgimg"
+						style="
+							background-image: url(src/images/prewedding/AngelaChris-prewedding-HD-0291-edit.jpg);
+						"
+					>
+						<img
+							src="src/images/prewedding/AngelaChris-prewedding-HD-0291-edit.jpg"
+							class="entity-img"
+						/>
+					</figure>
+					<div class="content">
+						<p class="title">Test</p>
+						<span class="caption"
+							>Lorem Ipsum has been the industry's standard dummy
+							text ever since the 1500s, when an unknown printer
+							took a galley of type and scrambled it to make a
+							type specimen book.</span
 						>
-							<h2
-								class="banner-slider__title"
-								data-swiper-parallax="-300"
-							>
-								Test Swifer
-							</h2>
-							<p class="banner-slider__description">
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Accusantium natus.
-							</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="banner-slider__image-container">
-							<img
-								src="src/images/prewedding/AngelaChris-prewedding-HD-0058-edit.jpg"
-								class="banner-slider__image"
-								alt="preweding 3"
-							/>
-							<div class="banner-slider__info-container">
-								<h2
-									class="banner-slider__title"
-									data-swiper-parallax="-300"
-								>
-									Test Swifer
-								</h2>
-								<p class="banner-slider__description">
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Accusantium natus.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="banner-slider__image-container">
-							<img
-								src="src/images/prewedding/AngelaChris-prewedding-HD-0291-edit.jpg"
-								class="banner-slider__image"
-								alt="preweding 4"
-							/>
-							<div class="banner-slider__info-container">
-								<h2
-									class="banner-slider__title"
-									data-swiper-parallax="-300"
-								>
-									Test Swifer
-								</h2>
-								<p class="banner-slider__description">
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Accusantium natus.
-								</p>
-							</div>
-						</div>
 					</div>
 				</div>
-				<div class="swiper-pagination"></div>
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-scrollbar"></div>
+				<div class="swiper-slide">
+					<figure
+						class="slide-bgimg"
+						style="
+							background-image: url(src/images/prewedding/AngelaChris-prewedding-HD-0058-edit.jpg);
+						"
+					>
+						<img
+							src="src/images/prewedding/AngelaChris-prewedding-HD-0058-edit.jpg"
+							class="entity-img"
+						/>
+					</figure>
+					<div class="content">
+						<p class="title">
+							Штампы декоративные для наружных и внутренних работ
+							имитация «Горный сланец»
+						</p>
+						<span class="caption"
+							>Lorem Ipsum has been the industry's standard dummy
+							text ever since the 1500s, when an unknown printer
+							took a galley of type and scrambled it to make a
+							type specimen book.</span
+						>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<figure
+						class="slide-bgimg"
+						style="
+							background-image: url(src/images/prewedding/AngelaChris-prewedding-HD-0039-edit.jpg);
+						"
+					>
+						<img
+							src="src/images/prewedding/AngelaChris-prewedding-HD-0039-edit.jpg"
+							class="entity-img"
+						/>
+					</figure>
+					<div class="content">
+						<p class="title">Test</p>
+						<span class="caption"
+							>Lorem Ipsum has been the industry's standard dummy
+							text ever since the 1500s, when an unknown printer
+							took a galley of type and scrambled it to make a
+							type specimen book.</span
+						>
+					</div>
+				</div>
 			</div>
-		</section>
-		<script src="build/swifergsap3.js"></script>
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev swiper-button-white"></div>
+			<div class="swiper-button-next swiper-button-white"></div>
+		</div>
+
+		<!-- Thumbnail navigation -->
+		<div class="swiper-container nav-slider loading">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<figure
+						class="slide-bgimg"
+						style="
+							background-image: url(src/images/prewedding/AngelaChris-prewedding-HD-0291-edit.jpg);
+						"
+					>
+						<img
+							src="src/images/prewedding/AngelaChris-prewedding-HD-0291-edit.jpg"
+							class="entity-img"
+						/>
+					</figure>
+					<div class="content">
+						<p class="title">Наши сертификаты</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<figure
+						class="slide-bgimg"
+						style="
+							background-image: url(src/images/prewedding/AngelaChris-prewedding-HD-0058-edit.jpg);
+						"
+					>
+						<img
+							src="src/images/prewedding/AngelaChris-prewedding-HD-0058-edit.jpg"
+							class="entity-img"
+						/>
+					</figure>
+					<div class="content">
+						<p class="title">Коврики и плиты</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<figure
+						class="slide-bgimg"
+						style="
+							background-image: url(src/images/prewedding/AngelaChris-prewedding-HD-0039-edit.jpg);
+						"
+					>
+						<img
+							src="src/images/prewedding/AngelaChris-prewedding-HD-0039-edit.jpg"
+							class="entity-img"
+						/>
+					</figure>
+					<div class="content">
+						<p class="title">Bernadette Newman</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="build/swiferparallax.js"></script>
 	</body>
 </html>
