@@ -1,0 +1,30 @@
+@use "../config/mixin" as *;
+
+.swiper {
+	width: 100%;
+	height: 100vh;
+}
+
+.banner-slider {
+	@include imageRatio(2480, 1653);
+
+	&__image-container {
+		backface-visibility: hidden;
+		will-change: transform;
+		transition: transform 1400ms ease;
+		background-color: #000;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__image {
+		opacity: 0.75;
+	}
+
+	&__info-container {
+		position: absolute;
+		top: 50%;
+		left: 200px;
+		transform: translateY(-50%);
+	}
+}

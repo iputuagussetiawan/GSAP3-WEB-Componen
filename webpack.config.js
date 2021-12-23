@@ -20,6 +20,8 @@ const entry = {
 	burgermenu: JS_DIR + "/pages/burgermenu.js",
 	burgermenu1: JS_DIR + "/pages/burgermenu1.js",
 	burgermenu2: JS_DIR + "/pages/burgermenu2.js",
+	swifergsap3: JS_DIR + "/pages/swifergsap3.js",
+	swiferparallax: JS_DIR + "/pages/swiferparallax.js",
 
 	GSAP_loco_scrolltriger_barba:
 		JS_DIR + "/pages/GSAP_loco_scrolltriger_barba.js",

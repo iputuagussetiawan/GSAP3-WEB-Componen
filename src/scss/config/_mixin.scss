@@ -49,7 +49,7 @@
 		&:before {
 			content: "";
 			display: block;
-			padding-top: ($imageHeight / $imageWidth) * 100%;
+			padding-top: math.div($imageHeight, $imageWidth) * 100%;
 		}
 	}
 	&__#{$className} {
