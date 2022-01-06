@@ -77,10 +77,10 @@ function initParallax() {
 		gsap.fromTo(
 			imageWrappers,
 			{
-				y: "-25vh",
+				y: "-50vh",
 			},
 			{
-				y: "25vh",
+				y: "50vh",
 				scrollTrigger: {
 					trigger: slide,
 					scrub: true,

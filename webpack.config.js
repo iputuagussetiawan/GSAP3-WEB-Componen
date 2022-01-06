@@ -24,8 +24,8 @@ const entry = {
 	swifergsap3: JS_DIR + "/pages/swifergsap3.js",
 	swiferparallax: JS_DIR + "/pages/swiferparallax.js",
 
-	GSAP_loco_scrolltriger_barba:
-		JS_DIR + "/pages/GSAP_loco_scrolltriger_barba.js",
+	GSAP_loco_scrolltriger_barba: JS_DIR + "/pages/GSAP_loco_scrolltriger_barba.js",
+	GSAP_barba: JS_DIR + "/pages/GSAP_barba.js",
 	//editor: JS_DIR + '/editor.js',
 };
 // Declaration Output Assets
