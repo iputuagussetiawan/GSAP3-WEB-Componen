@@ -79,7 +79,7 @@ let navSliderOptions = {
 	centeredSlides: true,
 	touchRatio: 0.2,
 	slideToClickedSlide: true,
-	direction: "vertical",
+	// direction: "horinzontal",
 	on: {
 		imagesReady: function () {
 			this.el.classList.remove("loading");

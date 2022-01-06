@@ -15,6 +15,7 @@ const entry = {
 	scroll_triger: JS_DIR + "/pages/scroll_triger.js",
 	scroll_triger_timeline: JS_DIR + "/pages/scroll_triger_timeline.js",
 	case1: JS_DIR + "/pages/case1.js",
+	case1clone: JS_DIR + "/pages/case1clone.js",
 	navigation1: JS_DIR + "/pages/navigation1.js",
 	navigation2: JS_DIR + "/pages/navigation2.js",
 	burgermenu: JS_DIR + "/pages/burgermenu.js",
