@@ -38,7 +38,6 @@ barba.init({
         pageTransition();
         await delay(1500);
         done();
-
       },
       async enter(data) {
         contentAnimation();
@@ -51,5 +50,9 @@ barba.init({
 
 window.onload = () => {
 	pageTransition();
-    //contentAnimation();
+
+    setTimeout(function() {
+        contentAnimation();
+    }, 1000);
+   
 };
