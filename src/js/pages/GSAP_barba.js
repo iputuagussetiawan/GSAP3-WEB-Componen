@@ -51,8 +51,8 @@ barba.init({
 window.onload = () => {
 	pageTransition();
 
-    setTimeout(function() {
-        contentAnimation();
-    }, 1000);
+    // setTimeout(function() {
+    //     contentAnimation();
+    // }, 1000);
    
 };
