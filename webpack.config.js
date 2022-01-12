@@ -25,6 +25,8 @@ const entry = {
 	swiferparallax: JS_DIR + "/pages/swiferparallax.js",
 
 	GSAP_loco_scrolltriger_barba: JS_DIR + "/pages/GSAP_loco_scrolltriger_barba.js",
+	GSAP_ScrollTriger_Sections_Falling_Back:JS_DIR + "/pages/GSAP_ScrollTriger_Sections_Falling_Back.js",
+	GSAP_ScrollTriger_Footer:JS_DIR + "/pages/GSAP_ScrollTriger_Footer.js",
 	GSAP_barba: JS_DIR + "/pages/GSAP_barba.js",
 	//editor: JS_DIR + '/editor.js',
 };
